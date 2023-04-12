@@ -38,8 +38,7 @@
 }
 
 #sfondo {
-  background: rgb(40, 30, 208);
-  background: radial-gradient(circle, rgba(40, 30, 208, 1) 0%, rgba(6, 111, 189, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: rgb(70, 63, 202);
 }
 
 #loto {
