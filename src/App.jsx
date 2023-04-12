@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-import MyHome from "./Components/MyHome";
+import MyMeteo from "./Components/MyMeteo";
 
 function App() {
   return (
-    <MyHome />
+    <MyMeteo />
   );
 }
 
