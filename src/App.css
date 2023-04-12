@@ -38,11 +38,16 @@
 }
 
 .form-control {
-  width: 60%;
+  width: 55%;
 }
 
 .hero h3,
 p {
   font-size: xx-large;
   margin-bottom: 0;
+}
+
+.hero {
+  background-color: rgb(213, 253, 253);
+  border-radius: 15px;
 }

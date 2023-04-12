@@ -65,14 +65,13 @@ const MyMeteo = () => {
  
   return (
     <div className="container">
-      <Row>
-        <Col xs={6} >
-          <div className="logo">
-          <h1 className="mt-4 mb-3">MyMeteo</h1>
-          <img src={logo} alt="page-logo" width={100} height={100} />
-          
-         </div>
-         <div className="search mt-4">
+      <Row >
+        <Col  xm={6} className="logo">
+          <div className=" d-flex  mt-5">
+            <img src={logo} alt="page-logo" width={100} height={100} />
+            <h1 className="mt-4 mb-3 ms-3">MyMeteo</h1>
+          </div>
+          <div className=" my-4">
             <Form onSubmit={handlesubmit}>   
               <Form.Control
                 type="text"
@@ -83,7 +82,7 @@ const MyMeteo = () => {
             </Form>
           </div>
         </Col>
-        <Col xs={6} >
+        <Col  xm={6}>
           <div className="mt-5 d-flex flex-column hero align-items-center text-center">
             {weather.name ? <h3 className="fw-bold fs-1 mb-2">{weather.name}</h3> : null}
             {weather.main ? (
@@ -98,14 +97,14 @@ const MyMeteo = () => {
       </Row>
       <Row>
       {nextWeather.list && (
-        <div className="list-group mt-4">
+        <div className="list-group mt-4 ">
           {nextWeather.list.map((day, i) => (
-            <div key={i} className="d-flex flex-row justify-content-between align-items-center">
-              <span className="flex-grow-1 text-start w-25">{day.dt_txt}</span>
-              <span className="fs-2">
+            <div key={i} className="d-flex flex-row justify-content-between align-items-center border border-info rounded my-2 p-2 ">
+              <span className="text-start fs-6 w-30">{day.dt_txt}</span>
+              <span className=" text-center fs-4">
               {day.weather[0].description}
               </span>
-              <span className="flex-grow-1 text-end w-25">
+              <span className=" fs-6 text-end w-30">
               {day.main.temp}&#176;C
               </span>
             </div>
