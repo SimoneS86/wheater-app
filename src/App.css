@@ -37,63 +37,12 @@
   }
 }
 
-#sfondo {
-  background: rgb(70, 63, 202);
-}
-
-#loto {
-  width: 80%;
-  position: relative;
-  left: 10%;
-  right: 25%;
-  object-position: center;
-  object-fit: cover;
-  -webkit-filter: blur(5px);
-}
-
-.logo {
-  display: flex;
-  position: absolute;
-  left: 15%;
-  right: 90%;
-  top: 3%;
-}
-
-.hero {
-  right: 50%;
-  left: 50%;
-  top: 20%;
+.form-control {
+  width: 60%;
 }
 
 .hero h3,
 p {
   font-size: xx-large;
   margin-bottom: 0;
-}
-
-.search {
-  right: 5%;
-  top: 20px;
-}
-
-.nextDayBackground {
-  background-color: rgba(255, 255, 255, 0.282);
-  align-items: center;
-}
-
-.nextDayBackground p {
-  font-size: medium;
-}
-
-.daySection {
-  display: flex;
-  position: absolute;
-  bottom: 13.5%;
-  left: 22%;
-  right: 50%;
-}
-
-.daySection div {
-  padding-left: 15px;
-  padding-right: 15px;
 }
